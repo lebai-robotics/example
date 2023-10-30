@@ -1,0 +1,21 @@
+name = "test"
+
+function on_robot_state(state)
+    if state == 11
+    then
+        start_record_trajectory(0.01)
+    end
+    if last_state == 11
+    then
+        end_record_trajectory(name)
+        move_trajectory(name)
+    end
+
+    last_state = state
+end
+
+while true
+do
+    -- move_trajectory(name)
+    sleep(1000)
+end
