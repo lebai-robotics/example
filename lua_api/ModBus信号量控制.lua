@@ -1,4 +1,5 @@
 function on_robot_stop(is_estop)
+    -- 覆盖默认的停机函数，禁止停机时停止任务
 end
 
 while(true)
